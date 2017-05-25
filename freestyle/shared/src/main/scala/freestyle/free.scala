@@ -141,6 +141,7 @@ object freeImpl {
 
           import _root_.freestyle.{ FreeS, FSHandler, InjK }
 
+          type OpTypes = _root_.iota.KCons[Op, _root_.iota.KNil]
           sealed trait Op[$AA] extends scala.Product with java.io.Serializable
           ..${requests.map( _.mkRequestClass(TTs))}
 
